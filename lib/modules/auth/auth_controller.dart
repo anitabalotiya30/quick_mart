@@ -1,11 +1,9 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quick_mart/helper/my_dialog.dart';
+import 'package:quick_mart/helper/extensions.dart';
 
+import '../../helper/my_dialog.dart';
 import '../../services/api_services.dart';
-import '../../services/pref.dart';
 import '../home/home_screen.dart';
 
 class AuthController extends GetxController {
@@ -13,14 +11,22 @@ class AuthController extends GetxController {
   final etPassword = TextEditingController();
 
   Future<void> onClickContinue() async {
-    MyDialog.showProgressBar();
-    final authenticate = await ApiServices.authenticateUser(
-        email: etEmail.text, password: etPassword.text);
+    final email = etEmail.text;
+    final password = etPassword.text;
 
-    log('accessToken --- ${Pref.userToken}');
-    log('authenticate --- $authenticate');
-    if (authenticate) {
-      Get.offAll(() => const HomeScreen());
+    if (email.isValid && password.isValid) {
+      if (!email.isEmail) {
+        MyDialog.error(msg: 'Please enter valid email address.');
+        return;
+      }
+      MyDialog.showProgressBar();
+      final authenticate = await ApiServices.authenticateUser(
+          email: etEmail.text, password: etPassword.text);
+
+      //
+      if (authenticate) Get.offAll(() => const HomeScreen());
+    } else {
+      MyDialog.error(msg: 'Please provide your email & password.');
     }
   }
 }

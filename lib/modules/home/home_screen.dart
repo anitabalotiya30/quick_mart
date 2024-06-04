@@ -109,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 children: [
                                   ..._c.listToShow.map(
                                     (e) => SizedBox(
-                                      width: mq.width * .43,
+                                      width: mq.width * .45,
                                       child: ProductCard(product: e),
                                     ),
                                   )
