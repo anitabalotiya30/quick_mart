@@ -32,14 +32,13 @@ class ApiServices {
 
         //
         if (response.statusCode == 201) {
-          MyDialog.success(msg: 'Registered successfully.');
+          Get.offAll(() => AuthScreen());
           return true;
         }
         return false;
       } catch (e) {
         MyDialog.error(msg: 'Something went wrong.');
         log('err --- ${e.toString()}');
-        Get.offAll(() => AuthScreen());
         return false;
       }
     } catch (e) {

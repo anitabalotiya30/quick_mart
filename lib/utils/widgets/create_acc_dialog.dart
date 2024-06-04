@@ -29,13 +29,13 @@ class CreateAccDialog {
 
           SizedBox(height: mq.width * .02),
 
-          Image.asset(StrConst.empty, height: mq.height * .12),
+          Image.asset(StrConst.empty, height: mq.height * .15),
+          SizedBox(height: mq.width * .01),
 
           //
           const Text(
               'To add your favorite items to your cart, please Resister/Create account.',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
+              textAlign: TextAlign.center),
 
           SizedBox(height: mq.height * .015),
 
