@@ -9,8 +9,8 @@ import '../../services/pref.dart';
 import '../home/home_screen.dart';
 
 class AuthController extends GetxController {
-  final etEmail = TextEditingController(text: 'john@mail.com');
-  final etPassword = TextEditingController(text: 'changeme');
+  final etEmail = TextEditingController();
+  final etPassword = TextEditingController();
 
   Future<void> onClickContinue() async {
     MyDialog.showProgressBar();

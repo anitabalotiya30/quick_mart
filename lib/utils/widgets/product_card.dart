@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quick_mart/utils/widgets/custom_network_img.dart';
 
 import '../../helper/global.dart';
 import '../../modules/home/home_controller.dart';
 import '../../modules/home/product.dart';
+import 'custom_network_img.dart';
 
 class ProductCard extends StatelessWidget {
   final homeC = Get.find<HomeController>();
