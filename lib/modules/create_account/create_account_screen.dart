@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../helper/global.dart';
 import '../../utils/widgets/custom_btn.dart';
 import '../../utils/widgets/custom_text_field.dart';
+import '../../utils/widgets/guest_btn.dart';
 import 'create_account_controller.dart';
 
 class CreateAccountScreen extends StatelessWidget {
@@ -25,15 +26,21 @@ class CreateAccountScreen extends StatelessWidget {
 
             //
             children: [
-              CustomTextField(etText: _c.etName, label: 'Name'),
+              CustomTextField(
+                  etText: _c.user.etName,
+                  label: 'Name',
+                  textInputType: TextInputType.name),
               SizedBox(height: mq.height * .03),
 
               //
-              CustomTextField(etText: _c.etEmail, label: 'Email'),
+              CustomTextField(
+                  etText: _c.user.etEmail,
+                  label: 'Email',
+                  textInputType: TextInputType.emailAddress),
               SizedBox(height: mq.height * .03),
 
               //
-              CustomTextField(etText: _c.etPassword, label: 'Password'),
+              CustomTextField(etText: _c.user.etPassword, label: 'Password'),
               SizedBox(height: mq.height * .03),
 
               //
@@ -42,7 +49,7 @@ class CreateAccountScreen extends StatelessWidget {
               SizedBox(height: mq.height * .1),
 
               //
-              const CustomBtn(text: 'Create'),
+              CustomBtn(text: 'Create', onTap: () => _c.onClickCreate()),
 
               //
               Row(
@@ -60,8 +67,13 @@ class CreateAccountScreen extends StatelessWidget {
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ))
                 ],
-              )
+              ),
               //
+
+              const Text('OR', textAlign: TextAlign.center),
+
+              // guest btn
+              const GuestBtn()
             ]));
   }
 }

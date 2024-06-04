@@ -5,12 +5,15 @@ class CustomTextField extends StatelessWidget {
   final String label;
   final Widget? prefixIcon;
   final TextInputType? textInputType;
+  final Function(String)? onChanged;
+
   const CustomTextField(
       {super.key,
       required this.etText,
       required this.label,
       this.prefixIcon,
-      this.textInputType});
+      this.textInputType,
+      this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +21,7 @@ class CustomTextField extends StatelessWidget {
         cursorColor: Colors.black45,
         keyboardType: textInputType ?? TextInputType.text,
         controller: etText,
+        onChanged: onChanged,
         //
         decoration: InputDecoration(
             prefixIcon: prefixIcon,

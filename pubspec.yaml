@@ -15,7 +15,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.6
+  cupertino_icons: ^1.0.8
 
   # Getx flutter
   get: ^4.6.6
@@ -24,7 +24,7 @@ dependencies:
   flutter_udid: ^3.0.0
 
   # For Detecting Network connectivity change
-  internet_connection_checker: ^1.0.0+1
+  internet_connection_checker: ^1.0.0
 
   # Network requests
   http: ^1.1.0
@@ -34,10 +34,19 @@ dependencies:
   hive_flutter: ^1.1.0
 
   # For Launch URL/Link
-  url_launcher: ^6.2.6
+  url_launcher: ^6.3.0
 
   #
   share_plus: ^9.0.0
+
+  # For Network Images
+  cached_network_image: ^3.3.1
+
+  # Shimmer
+  shimmer: ^3.0.0
+
+  # Flutter Animation
+  flutter_animate: ^4.5.0
 
 dev_dependencies:
   flutter_test:
@@ -45,7 +54,7 @@ dev_dependencies:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
   # flutter pub run change_app_package_name:main com.ecommerce.quickmart
   # change_app_package_name: ^1.2.0

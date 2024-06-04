@@ -1,3 +1,5 @@
+enum Status { na, loading, completed, error }
+
 class Product {
   int? id;
   String? title;

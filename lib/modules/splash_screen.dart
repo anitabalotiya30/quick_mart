@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quick_mart/modules/auth/auth_screen.dart';
@@ -23,13 +25,12 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _getProfileData() async {
-    Future.delayed(const Duration(milliseconds: 1500), () async {
-      bool exists = false;
-
-      if (Pref.userToken.isNotEmpty) {
-        exists = await ApiServices.getUserProfile(accessToken: Pref.userToken);
-      }
-
+    bool exists = false;
+    if (Pref.userToken.isNotEmpty) {
+      exists = await ApiServices.getUserProfile(accessToken: Pref.userToken);
+    }
+    log('exist --- $exists, token ---- ${Pref.userToken}');
+    Future.delayed(const Duration(milliseconds: 1500), () {
       Get.off(() => exists ? const HomeScreen() : AuthScreen());
     });
   }

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quick_mart/modules/create_account/create_account_screen.dart';
+import 'package:quick_mart/modules/home/home_screen.dart';
+import 'package:quick_mart/utils/widgets/guest_btn.dart';
 
 import '../../helper/global.dart';
 import '../../utils/constants/str_const.dart';
 import '../../utils/widgets/custom_btn.dart';
 import '../../utils/widgets/custom_text_field.dart';
+import '../create_account/create_account_screen.dart';
 import 'auth_controller.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -55,15 +57,12 @@ class AuthScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ))
             ],
-          )
+          ),
 
-          // register btn
-          // TextButton(
-          //     onPressed: () {},
-          //     child: const Text(
-          //       'Register',
-          //       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-          //     ))
+          const Text('OR', textAlign: TextAlign.center),
+
+          // guest btn
+          const GuestBtn()
         ]));
   }
 }

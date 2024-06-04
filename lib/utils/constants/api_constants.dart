@@ -4,4 +4,5 @@ class ApiConstants {
   static const getAllProducts = '${baseUrl}products';
   static const authenticateUser = '${baseUrl}auth/login';
   static const userProfile = '${baseUrl}auth/profile';
+  static const createUser = '${baseUrl}users/';
 }

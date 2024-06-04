@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:quick_mart/modules/splash_screen.dart';
 
 import 'helper/global.dart';
-import 'modules/auth/auth_screen.dart';
+import 'modules/splash_screen.dart';
 import 'services/pref.dart';
 
 Future<void> main() async {
@@ -41,7 +40,7 @@ class MyApp extends StatelessWidget {
             fontFamily: 'Lato',
             useMaterial3: false,
 
-            //
+            // set default theme for appbar
             appBarTheme: const AppBarTheme(
                 backgroundColor: Colors.white,
                 elevation: 0,
@@ -52,7 +51,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     color: Colors.black)),
 
-            //
+            // set default theme for textField
             inputDecorationTheme: const InputDecorationTheme(
                 isDense: true,
                 filled: true,

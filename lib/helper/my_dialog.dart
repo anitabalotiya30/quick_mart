@@ -22,6 +22,6 @@ class MyDialog {
   }
 
   static void showProgressBar() {
-    Get.dialog(const Center(child: CustomLoading()));
+    Get.dialog(const Center(child: CustomLoading(color: Colors.black)));
   }
 }
