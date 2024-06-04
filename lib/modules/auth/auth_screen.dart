@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:quick_mart/modules/home/home_screen.dart';
-import 'package:quick_mart/utils/widgets/guest_btn.dart';
 
 import '../../helper/global.dart';
 import '../../utils/constants/str_const.dart';
 import '../../utils/widgets/custom_btn.dart';
 import '../../utils/widgets/custom_text_field.dart';
+import '../../utils/widgets/guest_btn.dart';
 import '../create_account/create_account_screen.dart';
 import 'auth_controller.dart';
 

@@ -81,7 +81,4 @@ class ProductCard extends StatelessWidget {
                   ])
                 ])));
   }
-
-  String get _defaultImg =>
-      'https://img.freepik.com/premium-vector/cartoon-flat-style-drawing-male-photographer-taking-photo-pose-camera-professional-operator-correspondent-man-young-male-with-camera-making-pictures-photo-graphic-design-vector-illustration_620206-4075.jpg';
 }
