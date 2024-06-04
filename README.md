@@ -32,7 +32,7 @@ A code editor (VS Code, Android Studio, etc.)
 
 # 1. Clone the repository
 
-git clone https://github.com/yourusername/ecommerce_app.git
+git clone https://github.com/anitabalotiya30/quick_mart.git
 
 # 2. Navigate to the project directory
 
