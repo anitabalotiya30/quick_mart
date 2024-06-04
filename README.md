@@ -1,16 +1,51 @@
 # quick_mart
 
-A new Flutter project.
+This is the README file for the test assignment e-commerce app developed using the Flutter framework, Dart programming language, and Getx state management. This app demonstrates basic e-commerce functionalities such as browsing products, viewing product details, managing a shopping cart, and user authentication.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+# Login Credentials
 
-A few resources to get you started if this is your first Flutter project:
+You can log in to the app using the following credentials OR create an account and use the same credentials to log in:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Email: john@mail.com
+Password: changeme
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Features
+
+User authentication (Sign up, Login)
+View products
+Browse products by categories and price
+Search for products
+Add products to the cart
+View cart and manage items
+
+# Installation
+
+# --- Prerequisites ---
+
+Flutter SDK: Install Flutter
+Dart SDK (included with Flutter)
+A code editor (VS Code, Android Studio, etc.)
+
+# Steps
+
+# 1. Clone the repository
+
+git clone https://github.com/yourusername/ecommerce_app.git
+
+# 2. Navigate to the project directory
+
+cd ecommerce_app
+
+# 3. Install dependencies
+
+flutter pub get
+
+# 4. Run the app
+
+flutter run
+
+# --------
+
+If you have any questions or need further assistance, feel free to contact me. Happy coding!
